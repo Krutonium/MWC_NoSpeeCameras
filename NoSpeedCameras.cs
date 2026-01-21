@@ -39,12 +39,12 @@ namespace NoSpeedCameras {
                 if (camerasEnabled.GetValue()) // If they should be enabled
                 {
                     SpeedCams.SetActive(true);
-                    PlayMakerExtensions.GetPlayMaker(SpeedCams, "Database").enabled = true;
+                    SpeedCams.GetPlayMaker("Database").enabled = true;
                 }
                 else
                 {
                     SpeedCams.SetActive(false);
-                    PlayMakerExtensions.GetPlayMaker(SpeedCams, "Database").enabled = false;
+                    SpeedCams.GetPlayMaker("Database").enabled = false;
                 }
             }
             else
